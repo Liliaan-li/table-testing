@@ -2,12 +2,12 @@ import { useContext, useState } from "react";
 import Checkbox from "@/components/checkbox/checkbox";
 import styles from "./extra-info.module.scss";
 import { TablesContext } from "@/App";
-import albatross from "@/assets/images/scorecard/albatross.gif";
-import parBirdie from "@/assets/images/scorecard/parBirdie.gif";
-import parEagle from "@/assets/images/scorecard/parEagle.gif";
-import parBogey from "@/assets/images/scorecard/parBogey.gif";
-import parDoubleBogey from "@/assets/images/scorecard/parDoubleBogey.gif";
-import parMoreDoubleBogey from "@/assets/images/scorecard/parMoreDoubleBogey.gif";
+import albatross from "@/assets/images/scorecard/albatross.png";
+import parBirdie from "@/assets/images/scorecard/parBirdie.png";
+import parEagle from "@/assets/images/scorecard/parEagle.png";
+import parBogey from "@/assets/images/scorecard/parBogey.png";
+import parDoubleBogey from "@/assets/images/scorecard/parDoubleBogey.png";
+import parMoreDoubleBogey from "@/assets/images/scorecard/parMoreDoubleBogey.png";
 const ExtraInfo = () => {
   const [practiceValue, setPracticeValue] = useState<boolean>(false);
   const [tournamentValue, setTournamentValue] = useState<boolean>(false);
