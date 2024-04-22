@@ -247,31 +247,5 @@ export const keyHandlers: Record<
       }, 200);
     }
   },
-  Backspace: (
-    newTeeAccuracies,
-    changedKeysAccuracies,
-    nextInput,
-    index,
-    setTeeAccuracy,
-    setKeyAccuracy,
-  ) => {
-    newTeeAccuracies[index] = "";
-    changedKeysAccuracies[index] = "";
-    setTeeAccuracy(newTeeAccuracies);
-    setKeyAccuracy(changedKeysAccuracies);
-  },
-  Delete: (
-    newTeeAccuracies,
-    changedKeysAccuracies,
-    nextInput,
-    index,
-    setTeeAccuracy,
-    setKeyAccuracy,
-  ) => {
-    // Обработка события стирания
-    newTeeAccuracies[index] = "";
-    changedKeysAccuracies[index] = "";
-    setTeeAccuracy(newTeeAccuracies);
-    setKeyAccuracy(changedKeysAccuracies);
-  },
+
 };

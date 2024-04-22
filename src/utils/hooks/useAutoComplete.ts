@@ -1,12 +1,12 @@
 import { ChangeEvent, useRef, useState, MouseEvent, RefObject } from "react";
-import { Option, PeopleOption } from "@/utils/types/types";
+import {Option} from "@/utils/types/types";
 
 type UseAutoCompleteParams = {
   delay?: number;
-  source: (search: string) => Option[] | PeopleOption[];
+  source: (search: string) => Option[];
   onChange: (value: string) => void;
 };
-type UseAutoCompleteReturn = {
+export type UseAutoCompleteReturn = {
   bindOption: {
     onClick: (e: MouseEvent<HTMLLIElement>) => void;
   };
@@ -19,7 +19,7 @@ type UseAutoCompleteReturn = {
   bindOptions: {
     ref: RefObject<HTMLUListElement>;
   };
-  suggestions: Option[] | PeopleOption[];
+  suggestions: Option[];
 };
 type UseAutoComplete = (params: UseAutoCompleteParams) => UseAutoCompleteReturn;
 
@@ -30,7 +30,7 @@ export const useAutoComplete: UseAutoComplete = ({
 }) => {
   const [myTimeout, setMyTimeOut] = useState(setTimeout(() => {}, 0));
   const listRef = useRef<HTMLUListElement>(null);
-  const [suggestions, setSuggestions] = useState<Option[] | PeopleOption[]>([]);
+  const [suggestions, setSuggestions] = useState<Option[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
   const [textValue, setTextValue] = useState<string>("");
 

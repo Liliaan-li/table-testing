@@ -1,7 +1,7 @@
 export type Option = {
   label: string;
   value: string;
-  place: string;
+  place?:string
 };
 
 type TeeOptions = {
@@ -17,11 +17,8 @@ export type Courses = {
 };
 
 export type People = {
-  id: number;
+  value: string;
   name: string;
   handicap: number;
 };
-export type PeopleOption = {
-  label: string;
-  handicap: number;
-};
+

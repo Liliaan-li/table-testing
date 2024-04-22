@@ -159,6 +159,11 @@ export const TableOptionalDataInput: React.FC<
         setTeeAccuracy,
         setKeyAccuracy,
       );
+    } else if (e.code === 'Backspace' || e.code === 'Delete') {
+      newTeeAccuracies[index] = '';
+      changedKeysAccuracies[index] = '';
+      setTeeAccuracy(newTeeAccuracies);
+      setKeyAccuracy(changedKeysAccuracies);
     }
   };
 

@@ -1,8 +1,8 @@
-import { People, PeopleOption } from "@/utils/types/types";
+import {Option, People} from "@/utils/types/types";
 
-export const getUserOptions = (users: People[]): PeopleOption[] => {
+export const getUserOptions = (users: People[]): Option[] => {
   return users.map((el) => ({
     label: el.name,
-    handicap: el.handicap,
+    value:el.value,
   }));
 };
