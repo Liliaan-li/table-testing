@@ -1,0 +1,10 @@
+@import "../../../styles/containersInput";
+.container_dateSelects {
+  @include container(0 0 22.2222222222%, 22.2222222222%);
+}
+label {
+  font-family: var(--font-family-sans-serif);
+  font-size: 13px;
+  margin-bottom: 0;
+  display: block;
+}

@@ -1,0 +1,37 @@
+@import "@/styles/containersInput";
+@import "@/styles/links";
+
+.container_coursesSelect {
+  @include container(0 0 21%, 21%);
+  .auto_wrap {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+  }
+  .options_container {
+    position: absolute;
+    z-index: 10;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: solid #a7cf3f 1px;
+    margin-top: 1px;
+    padding: 0;
+    .suggestion {
+      list-style-type: none;
+      background: #ffffff;
+      width: 200px;
+      display: block;
+      color: #383838;
+      font-size: 14px;
+      border-bottom: solid #d7d7d7 1px;
+      padding: 5px 4px 3px;
+      cursor: pointer;
+      text-align: left;
+    }
+  }
+}
+.link {
+  @include links;
+}

@@ -1,0 +1,20 @@
+@import "../../styles/containersInput";
+
+.container_UserInput {
+  @include container(0 0 16.6666666667%, 16.6666666667%);
+}
+.input {
+  border: 1px solid #383838;
+  width: 100%;
+  height: 27px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+label {
+  font-family: var(--font-family-sans-serif);
+  font-size: 13px;
+  margin-bottom: 0;
+}

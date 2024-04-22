@@ -1,0 +1,141 @@
+.table {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #383838;
+  border-collapse: collapse;
+  td {
+    border: 1px solid #383838;
+    font-weight: normal;
+    height: 100%;
+    text-align: center;
+
+    input {
+      width: 100%;
+      border: none;
+      text-align: center;
+      height: 100%;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+  .heading_automatic {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 13px;
+    height: 15px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  }
+  .td_scores {
+    width: 30px;
+    font-size: 18px;
+  }
+  .td_scores_tee {
+    width: 30px;
+    font-size: 11px;
+  }
+  .td_scores_no_border {
+    border: none;
+    font-size: 13px;
+    color: #676161;
+  }
+  .td_net_score {
+    font-size: 13px;
+    color: #676161;
+  }
+
+  .td_total_scores_tee {
+    width: 50px;
+    font-size: 11px;
+  }
+  .td_total_scores {
+    width: 50px;
+  }
+  .auto_title {
+    width: 190px;
+  }
+  .total {
+    width: 150px;
+    color: #041d2e;
+    table {
+      width: 100%;
+      border: none;
+      margin-bottom: 0;
+      border-collapse: collapse;
+
+      .head {
+        font-size: 8px;
+        height: 10px;
+        font-weight: bold;
+        border: none;
+        padding: 0;
+      }
+      .total_percent {
+        height: 19px;
+        border: none;
+        padding: 0;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .td_title {
+    text-align: left;
+    font-size: 16px;
+    text-transform: none;
+    padding-left: 5px;
+    span {
+      float: right;
+      padding-right: 2px;
+      margin-top: 4px;
+      font-size: 11px;
+    }
+  }
+  .user_hdcp {
+    background-color: #d7d7d7;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    font-size: 11px;
+    padding-right: 5px;
+    text-align: right;
+    text-transform: none;
+  }
+
+  .td_heading {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 13px !important;
+    color: #676161;
+  }
+}
+
+.tee_scores_table {
+  background-color: #d7d7d7;
+  color: #676161;
+}
+
+.albatross {
+  background: url("@/assets/images/scorecard/albatross.gif") no-repeat center;
+}
+.parBirdie {
+  background: url("@/assets/images/scorecard/parBirdie.gif") no-repeat center;
+}
+.parBogey {
+  background: url("@/assets/images/scorecard/parBogey.gif") no-repeat center;
+}
+.parDoubleBogey {
+  background: url("@/assets/images/scorecard/parDoubleBogey.gif") no-repeat
+    center;
+}
+.parEagle {
+  background: url("@/assets/images/scorecard/parEagle.gif") no-repeat center;
+}
+.parMoreDoubleBogey {
+  background: url("@/assets/images/scorecard/parMoreDoubleBogey.gif") no-repeat
+    center;
+}

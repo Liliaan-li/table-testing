@@ -1,0 +1,25 @@
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.mr1 {
+  margin-right: 0.25rem !important;
+}
+
+.select {
+  border: 1px solid #383838;
+  border-radius: 5px;
+  height: 27px;
+  padding: 2px;
+  width: 100%;
+  font-size: 14px;
+
+  .items {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0 2px 1px;
+    white-space: nowrap;
+  }
+}

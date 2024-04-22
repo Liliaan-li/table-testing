@@ -1,0 +1,11 @@
+@import "@/styles/containersInput";
+@import "@/styles/links";
+.container_teeSelect {
+  @include container(0 0 13.8888888889%, 13.8888888889%);
+}
+.hidden {
+  display: none;
+}
+.link {
+  @include links;
+}

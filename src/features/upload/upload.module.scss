@@ -1,0 +1,79 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  .upload_container {
+    text-align: right;
+    margin-top: 1.5rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    a {
+      margin-right: 5px;
+    }
+    .tg_button_cancel {
+      background-color: #d7d7d7;
+      border: 1px solid #d7d7d7;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #383838;
+      display: inline-block;
+      font-size: 14px;
+      padding: 4px 10px 4px 10px;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+      }
+      &:active {
+        color: #ffffff;
+      }
+    }
+    .tg_button_submit {
+      background-color: #a7cf3f;
+      border: 1px solid #a7cf3f;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 14px;
+      padding: 4px 10px 4px 10px;
+      cursor: pointer;
+      &:hover {
+        color: #041d2e;
+      }
+      &:active {
+        color: #041d2e;
+      }
+
+      .fa {
+        display: inline-block;
+        background-image: url("@/assets/images/repeat.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .fa_fw {
+        width: 1.28571429em;
+        text-align: center;
+      }
+      .fa_spin {
+        -webkit-animation: fa_spin 2s infinite linear;
+        animation: fa_spin 2s infinite linear;
+      }
+    }
+
+    @keyframes fa_spin {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(359deg);
+      }
+    }
+    .issues {
+      margin-top: 0.5rem;
+    }
+  }
+}
